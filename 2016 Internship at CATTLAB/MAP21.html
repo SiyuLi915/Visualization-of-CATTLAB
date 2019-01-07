@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<title>MAP21</title>
+<script src="http://localhost:8000/d3/d3.min.js"></script>
+<script src="http://localhost:8000/topojson/topojson.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="example.css">
+	</head>
+  	<style>
+body{
+    font-size: 0.8em;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+   </style>
+ 	<body>
+   		<script type="text/javascript">
+
+   		</script>
+    	<h1>Map-21 Analysis</h1>
+
+    	<h3>System Travel Time Reliability Trends</h3>
+
+    	<p class="author"> AUTHOR: SIYU LI . JIAXIAO ZHOU</p>
+
+      <hr class="divide">
+      <div id=introduction>
+       <p>After investigating the System Travel Time Reliability data exported from the MAP-21, The CATT lab was wondering how each state of America performs in the reliability from 2012 to 2015.
+      The U.S. Federal Highway Administration passed MAP-21, Moving Ahead for Progress in the 21st century Act, to establish a performance-based program. Travel time reliability measures the unexpected delay in everyday congestion in many U.S. cities. It provides a consistency in travel times. The higher the value means that the state has higher dependability in travel times, as measured across different times of the day.</p></div>
+<hr class="break2" width="30%">
+        <div id = "mapIntro">
+      <p>The two interactive maps below show exact trends and changing travel time reliability happening in U.S. states. The left map shows the changing travel time reliability in non-interstate highways while the right map shows that in interstate highways. The filled color represents the percentage of reliability. The deeper the color, the higher the value of System Travel Time Reliability. Two maps will change their filled colors based on the year shows on the top right of the graph.</p></div>
+
+      <p class="year"></p>
+      <div id="map1">
+      <div id='map2'>
+      <script type="text/javascript" src="map_.js"></script>
+      </div>
+      </div>
+
+      <div id="mapIntro">
+      <p>It is obviously that, although both maps demonstrate a decreasing trend over the four years, the rate of decreasing for non-interstate map is much higher than the rate of decreasing for interstate map. That is, the non-interstate highways had a huge decreasing over the years.</p></div>
+
+      <hr class="break">
+      <br>
+    <div id="option">
+    <input name="Interstate_Button"
+           class="button"
+           type="button"
+           value="Interstate"
+           onclick="get_interstate_data()" />
+    <input name="Non_Interstate_Button"
+           class="button"
+           type="button"
+           value="Non-Interstate"
+           onclick="get_non_interstate_data()" />
+    </div>
+    <br>
+    <div id="table_container"></div>
+    <br>
+    <div id="yUnit">System Travel Time Reliability (%)</div>
+    <script type="text/javascript" src="line_chart.js"></script>
+      <div id="xUnit">Year</div>
+      <br>
+
+    <div id="lineIntro"><p>
+      Another interesting trend is that from 2013 to 2014, both the maps demonstrate a dramatic decreasing in travel time reliability. This is proved also by the line chart shown above. This chart has 2012-2015 as x-axis and the travel time reliability as y-axis. Each line represents the performance of a state over the four years. There are two buttons on the top of the line chart; one shows the non-interstate performances, and another one shows the interstate performances. From 2012 to 2015, almost all states show a decreasing trend.
+      There is a dropdown Manu on the top of the general line chart graph. It contains 51 states and if anyone is clicked, the line char will switch to the single line that shows the trend of that state over the four years.
+      </p>
+    </div>
+
+    <hr width="40%">
+<div id="aveIntro">
+    <p>
+    In the Interstate graph, the reliabilities of most states keep their performances over the four years. A limited number of them had a dramatic decline in these years. However, in the non-interstate graph, the case is different. In 2012, almost all states are above 90%, but in 2015, the differences of reliability between states are increasing significantly, only a few of them still keep above 90%. It can be shown in the line chart of average value below.</p>
+    </div>
+    <div id="show"></div>
+    <div id="yUnitAve">System Travel Time Reliability (%)</div>
+    <div id="ave"><script type="text/javascript" src="Ave.js"></script></div>
+    <div id="xUnitAve">Year</div>
+
+<br>
+<hr class="end">
+  	</body>
+</html>

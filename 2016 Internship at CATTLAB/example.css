@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400|Exo+2:300,600);
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+
+  background: #fefbf3;
+  color: #475B62;
+  margin: 50px;
+  padding: 20px;
+}
+
+h1, h3{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #CB4B19;
+  text-align: center;
+  line-height: 190%;
+}
+hr{
+  color:grey;
+}
+hr.break{
+  height: 1px;
+  color: #819090;
+  background-color:  #819090;
+  border: none;
+}
+hr.divide { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.divide:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+hr.break2 {
+    padding: 0;
+    border: none;
+    border-top: medium double grey;
+    color: grey;
+    text-align: center;
+}
+hr.break2:after {
+    content: none;
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #FCF4DC;
+}
+hr.end{
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+h1{
+  font-size:3em;
+}
+h3{
+  font-size:1em;
+}
+
+
+.button {
+    background-color: #BD3613; /* Green */
+    border: 2px solid #BD3613;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;    
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: #FCF4DC; 
+    color: #BD3613;
+
+}
+
+
+#map1{
+    float: left;
+    width: 500;
+    height: 500;
+    margin: 5px;
+    color:#BD3613;;
+    font-size:1.3em;
+    
+}
+#map2{
+  float: left;
+}
+p.author{
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+        color:grey;
+        font-variant: small-caps;
+        font-size: 12px;
+        padding-top: 10px;
+      }
+.roadType1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+        float:left;
+        color:black;
+        font-size: 16px;
+        padding-left: 200px;
+}
+.roadType2{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+        float:left;
+        color:black;
+        font-size: 16px;
+        padding-left: 300px;
+}
+.year{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+        color:brown;
+        font-size: 17px;
+}
+
+
+#yUnit, #xUnit{
+  color:black;
+  font-size: 16px;
+}
+#xUnit{
+  padding-left:1000px;
+}
+#yUnitAve, #xUnitAve{
+  color:black;
+  font-size: 14px;
+}
+#xUnitAve{
+  padding-left: 800px;
+}
+
+#ave{
+  float:left;
+}
+
+#introduction p{
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+        text-align: left;
+        color:black;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 200%;
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-bottom: 30px;
+       
+}
+
+#mapIntro,#lineIntro,#aveIntro p{
+  clear:left;
+   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+        text-align: left;
+        color:black;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 200%;
+        padding-bottom: 30px;
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-top: 30px;
+
+}
+
+.paragraph{
+        column-width: 100px
+      }
+#paragraph1 p{
+        text-align: center;
+        font-size: 20px;
+      }
+}
